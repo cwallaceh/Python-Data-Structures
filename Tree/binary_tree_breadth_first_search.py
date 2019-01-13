@@ -24,18 +24,18 @@ def breadth_first_search(value, root):
     return False
 
 
-root = BinaryTree()
-root.data = 1
-root.left = BinaryTree()
-root.left.data = 2
-root.right = BinaryTree()
-root.right.data = 3
-root.left.right = BinaryTree()
-root.left.right.data = 5
-root.right.left = BinaryTree()
-root.right.left.data = 6
-root.right.right = BinaryTree()
-root.right.right.data = 7
+# root = BinaryTree()
+# root.data = 1
+# root.left = BinaryTree()
+# root.left.data = 2
+# root.right = BinaryTree()
+# root.right.data = 3
+# root.left.right = BinaryTree()
+# root.left.right.data = 5
+# root.right.left = BinaryTree()
+# root.right.left.data = 6
+# root.right.right = BinaryTree()
+# root.right.right.data = 7
 
 #      1
 #    /   \
@@ -43,4 +43,4 @@ root.right.right.data = 7
 #    \   / \
 #     5 6   7
 
-print(breadth_first_search(7, root))  # 1 2 3 5 6 7
+# print(breadth_first_search(7, root))  # 1 2 3 5 6 7
