@@ -1,4 +1,4 @@
-# Implement a Trie using a dictionary
+# Implementing a Trie using a dictionary in Python
 
 #      t
 #    /   \
