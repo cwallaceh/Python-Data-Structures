@@ -1,10 +1,10 @@
 # Implementing Breadth-First Search for a Binary Tree
 
 from queue import Queue
-from binary_tree import Tree
+from binary_tree import BinaryTree
 
 
-def breadth_firt_search(value, root):
+def breadth_first_search(value, root):
     """Using a Queue"""
     queue = Queue()
     queue.add(root)
@@ -24,17 +24,17 @@ def breadth_firt_search(value, root):
     return False
 
 
-root = Tree()
+root = BinaryTree()
 root.data = 1
-root.left = Tree()
+root.left = BinaryTree()
 root.left.data = 2
-root.right = Tree()
+root.right = BinaryTree()
 root.right.data = 3
-root.left.right = Tree()
+root.left.right = BinaryTree()
 root.left.right.data = 5
-root.right.left = Tree()
+root.right.left = BinaryTree()
 root.right.left.data = 6
-root.right.right = Tree()
+root.right.right = BinaryTree()
 root.right.right.data = 7
 
 #      1
@@ -43,4 +43,4 @@ root.right.right.data = 7
 #    \   / \
 #     5 6   7
 
-print(breadth_firt_search(7, root))  # 1 2 3 5 6 7
+print(breadth_first_search(7, root))  # 1 2 3 5 6 7

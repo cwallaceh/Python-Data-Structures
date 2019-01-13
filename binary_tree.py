@@ -1,7 +1,7 @@
 # Implementing a very simple Binary Tree in Python
 
 
-class Tree(object):
+class BinaryTree():
     def __init__(self):
         self.left = None
         self.right = None
