@@ -12,11 +12,25 @@ class BinaryNode():
 
 
 class BinarySearchTree():
-    def __init__(self, root):
-        self.root = BinaryNode(root)
+    def __init__(self, data):
+        self.root = BinaryNode(data)
 
-    def add(self):
-        # TODO
+    def insert(self, data):
+        node = self.root
+        condition = True
+        while condition:
+            if data < node.data:
+                if node.left:
+                    node = node.left
+                else:
+                    node.left = BinaryNode(data)
+                    condition = False
+            else:
+                if node.right:
+                    node = node.right
+                else:
+                    node.right = BinaryNode(data)
+                    condition = False
 
     def __repr__(self):
         return "BST(%s)" % self.root
@@ -29,4 +43,17 @@ class BinarySearchTree():
 #     6 10  14
 
 bst = BinarySearchTree(8)
-print(bst)
+bst.insert(4)
+bst.insert(12)
+bst.insert(6)
+bst.insert(10)
+bst.insert(14)
+bst.insert(5)
+print(bst.root)
+print(bst.root.left)
+print(bst.root.right)
+print(bst.root.left.left)
+print(bst.root.left.right)
+print(bst.root.left.right.left)
+print(bst.root.right.left)
+print(bst.root.right.right)
